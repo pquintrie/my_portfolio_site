@@ -1,10 +1,16 @@
 <div id="top">
   <div id="banner-info" class="height-all-screen position-relative d-flex align-items-center justify-content-center display-banner-info">
-    <div id="typed-strings" class="font-weight-bold text-center">
-      <p>Bonjour <br>Je m'appelle Paul</br>Je suis développeur web fullstack!<br>Faisons connaisance...</br></p>
-    </div>
-    <h2 id="typed" class="font-weight-bold text-center"></h2>
+    <!-- <div id="typed-strings" class="font-weight-bold text-center">
 
+    </div> -->
+    <h2 id="typed" class="font-weight-bold text-center"></h2>
+    <script>
+    var options = {
+      strings: ["Bonjour \n Je m'appelle Paul \n Je suis développeur web fullstack! \n Faisons connaisance..."],
+      typeSpeed: 40,
+    }
+    var typed = new Typed("#typed", options);
+    </script>
     <span class="element"></span>
 
 
