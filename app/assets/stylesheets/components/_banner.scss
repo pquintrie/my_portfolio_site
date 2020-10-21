@@ -1,0 +1,105 @@
+// BANNER
+.banner {
+  height: 100vh;
+  background-image: url("https://img.redbull.com/images/q_auto,f_auto/redbullcom/2018/05/11/760fd739-6a27-44ef-9e45-24d1380b053c/ido-portal-mouvement");
+  background-size: cover;
+  h2 {
+    font-size: 3em;
+    width: 50%;
+    font-weight: lighter;
+  }
+}
+
+// BANNER INFOS
+.height-all-screen-navbar {
+  height: calc(100vh + 3.5em);
+}
+
+.height-all-screen {
+  height: 100vh;
+}
+
+.hide-banner-info {
+  transition: all 0.9s ease-in-out;
+  opacity: 0;
+}
+
+.display-banner-info {
+  transition: all 0.9s ease-in-out;
+  opacity: 1;
+}
+
+.scroll {
+  position: absolute;
+  bottom: 1.5em;
+}
+
+.scroll-icon {
+  height: 3em;
+  width: 2em;
+  border: 0.18em solid white;
+  border-radius: 1em;
+}
+
+.scroll-icon-dot {
+  position: absolute;
+  left: 50%;
+  margin-left: -0.25em;
+  top: 0.6em;
+  height: 0.5em;
+  width: 0.5em;
+  border-radius: 50%;
+  animation: scroll 2s ease-out infinite;
+  background-color: white;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    transform: translateY(0.75em);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .height-all-screen-navbar {
+    height: calc(100vh);
+    margin-bottom: 3.5em;
+  }
+
+  .banner {
+    h2 {
+      font-size: 2em;
+      width: 80%;
+    }
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767px) {
+  .banner {
+    h2 {
+      font-size: 2em;
+      width: 80%;
+    }
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991px) {
+  .banner {
+    h2 {
+      width: 80%;
+    }
+  }
+}
