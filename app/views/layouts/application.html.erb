@@ -10,7 +10,10 @@
   </head>
 
   <body>
-    <%= partial "shared/banner_info" %>
+    <div id="home" class="banner height-all-screen-navbar text-white">
+      <%= render "shared/banner_info" %>
+      <%= render "shared/navbar" %>
+    </div>
     <%= yield %>
   </body>
 </html>
