@@ -9,6 +9,8 @@ require("channels")
 
 import 'bootstrap'
 import $ from "jquery";
+import Typed from "typed.js"
+
 
 //= require jquery
 //= require jquery.turbolinks
@@ -23,4 +25,13 @@ import $ from "jquery";
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
-import "./index.js";
+
+
+document.addEventListener('DOMContentLoaded', function addTyped() {
+  var options = { strings: ["Bonjour \n Je m'appelle Paul \n Je suis développeur web fullstack! \n Faisons connaisance..."],
+                  typeSpeed: 40,
+                }
+  new Typed("#typed", options);
+});
+
+
